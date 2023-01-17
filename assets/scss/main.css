@@ -108,18 +108,13 @@ body {
   grid-area: titulo;
 }
 
-.main__horarios--categorias,
-.main__horarios--turnos {
-  border: 3px solid rgba(0, 255, 0, 0.5);
-  text-align: center;
-  margin: 20px;
-}
-
 .main__horarios--categorias {
   font-size: 1em;
   text-decoration: none;
   text-align: center;
   grid-area: categorias;
+  border: 3px solid rgba(0, 255, 0, 0.5);
+  margin: 20px;
 }
 .main__horarios--categorias ul {
   padding: 0px;
@@ -140,8 +135,9 @@ body {
   text-decoration: none;
   text-align: center;
   grid-area: turnos;
+  border: 3px solid rgba(0, 255, 0, 0.5);
+  margin: 20px;
 }
-
 .main__horarios--turnos ul {
   padding: 0px;
 }
@@ -257,9 +253,12 @@ body {
   margin: 0px 50px 50px;
 }
 
+.main__contacto--form, .main__contacto--datos {
+  flex-direction: column;
+}
+
 .main__contacto--form {
   display: flex;
-  flex-direction: column;
   border: 3px solid rgba(255, 162, 0, 0.5);
   background-color: rgba(255, 162, 0, 0.5);
   padding: 20px;
@@ -267,7 +266,6 @@ body {
 
 .main__contacto--datos {
   display: flex;
-  flex-direction: column;
 }
 
 /*Este es el estilo GENERAL de FOOTER*/

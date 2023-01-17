@@ -59,18 +59,13 @@
     grid-area: titulo;
 }
 
-.main__horarios--categorias,
-.main__horarios--turnos {
-    border: 3px solid c.$verde_header;
-    text-align: center;
-    margin: 20px;
-}
-
 .main__horarios--categorias {
     font-size: 1em;
     text-decoration: none;
     text-align: center;
     grid-area: categorias;
+    border: 3px solid c.$verde_header;
+    margin: 20px;
     ul {
         padding: 0px;
         li {
@@ -91,9 +86,8 @@
     text-decoration: none;
     text-align: center;
     grid-area: turnos;
-}
-
-.main__horarios--turnos {
+    border: 3px solid c.$verde_header;
+    margin: 20px;
     ul {
         padding: 0px;
         li {
@@ -200,9 +194,16 @@
     margin: 0px 50px 50px;
 }
 
+//MIXINS (prueba de uso de mixins)
+@mixin flex($flexd) {
+    flex-direction: $flexd;
+ }
+ .main__contacto--form, .main__contacto--datos {
+    @include flex(column);
+ }
+
 .main__contacto--form {
     display: flex;
-    flex-direction: column;
     border: 3px solid c.$marron_footer;
     background-color: c.$marron_footer;
     padding: 20px;
@@ -210,5 +211,4 @@
 
 .main__contacto--datos {
     display: flex;
-    flex-direction: column;
 }
