@@ -1,4 +1,4 @@
-@use '_commons' as c;
+@import '_commons';
 
 /*Este es el estilo GENERAL de FOOTER*/
 
@@ -7,7 +7,7 @@
     height: 20vh;
     justify-content: space-between;
     align-items: center;
-    background-color: c.$marron_footer;
+    background-color: $marron_footer;
     padding: 10px;
     border-radius: 5px;
     position: relative;

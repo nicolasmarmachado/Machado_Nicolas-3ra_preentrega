@@ -1,4 +1,4 @@
-@use '_commons' as c;
+@import '_commons';
 
 /* Este es el estilo de MAIN */
 
@@ -64,7 +64,7 @@
     text-decoration: none;
     text-align: center;
     grid-area: categorias;
-    border: 3px solid c.$verde_header;
+    border: 3px solid $verde_header;
     margin: 20px;
     ul {
         padding: 0px;
@@ -74,8 +74,8 @@
             border-radius: 5px;
             margin: 5px auto 5px auto;
             &:hover {
-                color: c.$blanco_hover;
-                background-color: c.$rojo_encabezados;
+                color: $blanco_hover;
+                background-color: $rojo_encabezados;
             }
         }
     }
@@ -86,7 +86,7 @@
     text-decoration: none;
     text-align: center;
     grid-area: turnos;
-    border: 3px solid c.$verde_header;
+    border: 3px solid $verde_header;
     margin: 20px;
     ul {
         padding: 0px;
@@ -96,8 +96,8 @@
             border-radius: 5px;
             margin: 5px auto 5px auto;
             &:hover {
-                color: c.$blanco_hover;
-                background-color: c.$negro_hover;
+                color: $blanco_hover;
+                background-color: $negro_hover;
             }
         }
     }
@@ -118,7 +118,7 @@
     position: relative;
     animation: balanceo 4s infinite;
     transition: 0.3s;
-    color: c.$rojo_instrucciones;
+    color: $rojo_instrucciones;
 }
 
 @keyframes balanceo {
@@ -150,7 +150,7 @@
 .horarios--tipoCancha,
 .horarios--horarioCancha,
 .horarios--horasCancha2 {
-    border: 3px solid c.$marron_footer;
+    border: 3px solid $marron_footer;
     text-align: center;
     margin: 5px auto 5px auto;
 }
@@ -161,7 +161,7 @@
     }}
 
 .horarios--tipoCancha2 li:hover {
-    background-color: c.$rojo_encabezados;
+    background-color: $rojo_encabezados;
 }
 
 /* Estilo torneos.html */
@@ -173,7 +173,7 @@
 }
 
 .main__torneos--federados{
-    border: 3px solid c.$verde_header;
+    border: 3px solid $verde_header;
     margin: 20px;
     height: 150px;
     h2 {
@@ -204,8 +204,8 @@
 
 .main__contacto--form {
     display: flex;
-    border: 3px solid c.$marron_footer;
-    background-color: c.$marron_footer;
+    border: 3px solid $marron_footer;
+    background-color: $marron_footer;
     padding: 20px;
 }
 

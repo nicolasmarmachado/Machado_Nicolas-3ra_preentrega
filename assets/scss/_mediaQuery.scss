@@ -1,4 +1,4 @@
-@use '_commons' as c;
+@import '_commons';
 
 @media only screen and (max-width: 530px) {
 
@@ -27,7 +27,7 @@
 
 @media only screen and (max-width: 675px) {
     #header{
-    background-color: c.$verde_header;
+    background-color: $verde_header;
     }
 
     .navbar__container{
@@ -83,13 +83,15 @@
     }
 
     .main__horarios--categorias {
-        border: c.$verde_header;
+        border: $verde_header;
         height: 250px;
         padding: 0px 100px;
     }
 
     .main__horarios--turnos {
-        @extend .main__horarios--categorias;
+        border: $verde_header;
+        height: 250px;
+        padding: 0px 100px;
     }
 
     /* turnosCanchas.html */
@@ -111,15 +113,16 @@
     }
 
     .horarios--tipoCancha {
-        border: 3px solid c.$marron_footer;
+        border: 3px solid $marron_footer;
         height: 300px;
         padding: 50px 50px;
 
     }
 
     .horarios--horarioCancha {
-        @extend .horarios--tipoCancha;
-
+        border: 3px solid $marron_footer;
+        height: 300px;
+        padding: 50px 50px;
     }
 
     .horarios--tipoCancha2 li {
@@ -127,14 +130,14 @@
     }
 
     .horarios--horasCancha2 {
-        border: 3px solid c.$marron_footer;
+        border: 3px solid $marron_footer;
         text-align: center;
         height: 300px;
         padding: 87px 50px 50px 50px;
     }
 
     .horarios--tipoCancha2 li:hover {
-        color: c.$blanco_hover;
+        color: $blanco_hover;
     }
 
     /* Estilo torneos.html */
@@ -147,7 +150,7 @@
     }
 
     .main__torneos--federados {
-        border: 3px solid c.$verde_header;
+        border: 3px solid $verde_header;
         text-align: center;
         height: 300px;
         margin: 20px;
@@ -155,7 +158,11 @@
     }
 
     .main__torneos--recreativos {
-        @extend .main__torneos--federados;
+        border: 3px solid $verde_header;
+        text-align: center;
+        height: 300px;
+        margin: 20px;
+        padding: 50px 100px;
     }
 
     /* Estilos contacto.html */
@@ -164,8 +171,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        border: 3px solid c.$marron_footer;
-        background-color: c.$marron_footer;
+        border: 3px solid $marron_footer;
+        background-color: $marron_footer;
     }
 
     .main__contacto--datos {
