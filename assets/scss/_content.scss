@@ -151,6 +151,7 @@
 .horarios--horarioCancha,
 .horarios--horasCancha2 {
     border: 3px solid $marron_footer;
+    border-radius: 10px;
     text-align: center;
     margin: 5px auto 5px auto;
 }
@@ -174,6 +175,7 @@
 
 .main__torneos--federados{
     border: 3px solid $verde_header;
+    border-radius: 10px;
     margin: 20px;
     height: 150px;
     h2 {
@@ -204,6 +206,7 @@
 
 .main__contacto--form {
     display: flex;
+    border-radius: 10px;
     border: 3px solid $marron_footer;
     background-color: $marron_footer;
     padding: 20px;
